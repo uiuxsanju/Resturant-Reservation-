@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Catch of the <span> Day</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="#" class="btn btn-reserve">Reservations</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Experience Culinary Excellence</h1>
+                <p>Authentic flavors crafted with passion and the freshest ingredients</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#" class="btn btn-secondary">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant interior">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded in 2025, Catch of the Day as a small family-owned bistro with a passion for bringing people together through exceptional food. Today, we continue that tradition with a commitment to quality and innovation.</p>
+                <p>Our chef brings 20 years of international experience, blending traditional techniques with modern creativity to deliver unforgettable dining experiences.</p>
+                <div class="signature">
+                    <img src="https://i.postimg.cc/8z2D4WYq/signature.png" alt="Chef's signature">
+                    <span>vickey</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Section -->
+    <section class="specials">
+        <div class="container">
+            <h2 class="section-title">Today's Specials</h2>
+            <p class="section-subtitle">Seasonal creations from our chef</p>
+            
+            <div class="specials-grid">
+                <div class="special-item">
+                    <div class="special-img">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Grilled Salmon">
+                        <div class="price">$28</div>
+                    </div>
+                    <h3>Grilled Salmon</h3>
+                    <p>Fresh Atlantic salmon with lemon butter sauce, served with seasonal vegetables</p>
+                </div>
+                
+                <div class="special-item">
+                    <div class="special-img">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" alt="Beef Tenderloin">
+                        <div class="price">$36</div>
+                    </div>
+                    <h3>Beef Tenderloin</h3>
+                    <p>Premium cut with red wine reduction, truffle mashed potatoes, and asparagus</p>
+                </div>
+                
+                <div class="special-item">
+                    <div class="special-img">
+                        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mushroom Risotto">
+                        <div class="price">$22</div>
+                    </div>
+                    <h3>Mushroom Risotto</h3>
+                    <p>Creamy arborio rice with wild mushrooms, parmesan, and fresh herbs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Crafted with seasonal ingredients</p>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="starters">Starters</button>
+                <button class="tab-btn" data-tab="mains">Main Courses</button>
+                <button class="tab-btn" data-tab="desserts">Desserts</button>
+                <button class="tab-btn" data-tab="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-content">
+                <!-- Starters -->
+                <div class="tab-panel active" id="starters">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Bruschetta</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Toasted bread topped with tomatoes, garlic, and fresh basil</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Calamari</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p>Crispy fried squid with lemon aioli and marinara sauce</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Caprese Salad</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                    </div>
+                </div>
+                
+                <!-- Mains -->
+                <div class="tab-panel" id="mains">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chicken Piccata</h3>
+                            <span class="price">$24</span>
+                        </div>
+                        <p>Pan-seared chicken with lemon, capers, and white wine sauce</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Pasta Carbonara</h3>
+                            <span class="price">$22</span>
+                        </div>
+                        <p>Spaghetti with creamy egg sauce, pancetta, and parmesan</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Vegetable Paella</h3>
+                            <span class="price">$26</span>
+                        </div>
+                        <p>Spanish rice dish with seasonal vegetables and saffron</p>
+                    </div>
+                </div>
+                
+                <!-- Desserts -->
+                <div class="tab-panel" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tiramisu</h3>
+                            <span class="price">$10</span>
+                        </div>
+                        <p>Classic Italian dessert with coffee-soaked ladyfingers</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chocolate Lava Cake</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Crème Brûlée</h3>
+                            <span class="price">$11</span>
+                        </div>
+                        <p>Rich custard topped with a layer of caramelized sugar</p>
+                    </div>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="tab-panel" id="drinks">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>House Red Wine</h3>
+                            <span class="price">$9/glass</span>
+                        </div>
+                        <p>Selection of premium red wines from our cellar</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Craft Cocktails</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Seasonal creations by our mixologist</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Fresh Juices</h3>
+                            <span class="price">$6</span>
+                        </div>
+                        <p>Daily selection of cold-pressed juices</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A taste of our atmosphere</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant dish">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Chef preparing food">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Dining experience">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Bar area">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-156475907620-859b1c4b6f93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Outdoor seating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <p class="section-subtitle">Memorable dining experiences</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The food was absolutely incredible! Every dish was prepared to perfection with such attention to detail. The service was impeccable and the atmosphere was perfect for our anniversary dinner."</p>
+                    <div class="guest">
+                        <img src="https://i.pinimg.com/736x/65/12/8e/65128e1f63fd4cb1c74153a87904080b.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Jahn</h4>
+                            <span>Local Food Critic</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I've dined at many restaurants around the world, and Savory Bites stands among the best. The chef's tasting menu was a culinary journey I won't soon forget."</p>
+                    <div class="guest">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <span>Travel Blogger</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"We had our company holiday party here and everything was perfect. The staff accommodated our large group seamlessly and the food was delicious across the board."</p>
+                    <div class="guest">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jessica Williams">
+                        <div>
+                            <h4>Jessica Williams</h4>
+                            <span>Event Planner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Bangurole Culinary Avenue<br>india City, GC 12345</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Reservations</h4>
+                        <p>(555) 123-4567<br>reservations@CatchoftheDay.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Monday - Thursday: 11am - 10pm<br>
+                           Friday - Saturday: 11am - 11pm<br>
+                           Sunday: 10am - 9pm</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-yelp"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Catch of the Day</h3>
+                    <p>Bringing people together through exceptional food and memorable dining experiences since 2005.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates on special events and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Catch of the Day. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
